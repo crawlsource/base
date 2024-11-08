@@ -1,0 +1,10 @@
+default_database: "${DATABASE_DRIVER|sqlite}"
+databases:
+    pgsql:
+      host: "${DATABASE_PGADMIN_HOST:127.0.0.1}"
+      db: "${DATABASE_PGADMIN_DATABASE|crawler}"
+      port: "${DATABASE_PGADMIN_PORT|5432}"
+      username: "${DATABASE_PGADMIN_USERNAME|postgres}"
+      password: "${DATABASE_PGADMIN_PASSWORD|postgres}"
+    sqlite:
+        path: "sqlite.db"
